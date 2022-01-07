@@ -5,11 +5,12 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
-   <script src="https://kit.fontawesome.com/6ff971e226.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+   
    <style>
-   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
    </style>
+
    <meta name="description" content="Weather application made for UCB's bootcamp with Open Weather API." />
    <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -21,26 +22,23 @@
    <div class="wrapper">
       <!--Nav Header-->
       <nav class="navbar">
-         <h1 class="display-4">Weather Dashboard <img src="./assets/images/weather.svg"></h1>
+         <h1 class="display-4">Weather Dashboard </h1>
       </nav>
       <!--Main Container Start-->
       <main class="container-fluid">
          <div class="row">
-            <!--Left Rail-->
             <div class="col-sm-2 card card-search">
                <h5>Get the Weather </h5>
                <!--Search Form-->
                <div class="input-group">
                   <form id="formCity">
-                     <input name="city" id="city" type="text" autofocus="true" placeholder="Search your city!" class="form-input" />
+                     <input name="city" id="city" type="text" autofocus="true" placeholder="Search city name" class="form-input" />
                      <button type="submit" class="btn"> Search <i class="fas fa-search"></i></button>
                   </form>
                </div>
                <!--Past City Search Buttons -->
                <div class="btn-group-vertical" id="buttons"></div>
             </div>
-            <!--End Left Rail-->
-            <!--Central Content Area-->
             <!--Today's Weather-->
             <div class="col-sm-9" id="currentWeather">
                <h3>Today's Weather</h3>
@@ -57,7 +55,7 @@
                      </div>
                   </div>
                </div>
-               <!--End Today's Weather Section-->
+        
                <!--Forecast 5 Day Section-->
                <div class="container" id="forecast">
                   <h3>5-Day Forecast:</h3>
@@ -114,10 +112,17 @@
                      </div>
                   </div>
                </div>
-               <!--End 5 day Container -->
             </div>
-            <!--End Center Container -->
+
+            
+
          </div>
+         <!-- footer -->
+         <footer>
+            <p>Made by Tsira Kvaratskhelia.</p>
+        </footer>
+    
+
          <!--Scripts: Moment, jQuery, JS-->
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>

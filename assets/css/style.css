@@ -9,6 +9,13 @@
     font-weight: 600;
   }
   
+  .wrapper {
+    min-height: 70%;
+    min-height: -webkit-calc(100% - 186px);
+    min-height: -moz-calc(100% - 186px);
+    min-height: calc(100% - 186px);
+  }
+
   .navbar {
     margin-bottom: 5vh;
     font-family: "Montserrat", sans-serif !important;
@@ -116,7 +123,7 @@
   .display-4 {
     color: #ffffff;
     text-align: center;
-    font-size: 40px;
+    font-size: 40px;wrapper
     font-weight: 600;
     padding-top: 10px;
     margin: 0 auto;
