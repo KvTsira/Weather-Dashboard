@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+   <script src="https://kit.fontawesome.com/6ff971e226.js" crossorigin="anonymous"></script>
+   <style>
+   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+   </style>
+   <meta name="description" content="Weather application made for UCB's bootcamp with Open Weather API." />
+   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <link rel="shortcut icon" href="./assets/images/wind.png">
+   <title>Open Weather API Application | SarahDurks.Github.io</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!--Nav Header-->
+      <nav class="navbar">
+         <h1 class="display-4">Weather Dashboard <img src="./assets/images/weather.svg"></h1>
+      </nav>
+      <!--Main Container Start-->
+      <main class="container-fluid">
+         <div class="row">
+            <!--Left Rail-->
+            <div class="col-sm-2 card card-search">
+               <h5>Get the Weather </h5>
+               <!--Search Form-->
+               <div class="input-group">
+                  <form id="formCity">
+                     <input name="city" id="city" type="text" autofocus="true" placeholder="Search your city!" class="form-input" />
+                     <button type="submit" class="btn"> Search <i class="fas fa-search"></i></button>
+                  </form>
+               </div>
+               <!--Past City Search Buttons -->
+               <div class="btn-group-vertical" id="buttons"></div>
+            </div>
+            <!--End Left Rail-->
+            <!--Central Content Area-->
+            <!--Today's Weather-->
+            <div class="col-sm-9" id="currentWeather">
+               <h3>Today's Weather</h3>
+               <div class="row">
+                  <div class="col-sm-9">
+                     <div class="card todayBlock">
+                        <h5> <span id="searchedCity"></span></h5>
+                        <h6><span id="todayDate"></span></h6>
+                        <img id="todayIcon" src="">
+                        <p><strong>Temperature: </strong><span id="todayTemp"></span> °F</p>
+                        <p><strong>Humidity: </strong><span id="todayHumidity"></span>%</p>
+                        <p><strong>Wind Speed: </strong><span id="todayWind"></span> mph</p>
+                        <p><strong>UV Index: </strong><span id="todayUV"></span></p>
+                     </div>
+                  </div>
+               </div>
+               <!--End Today's Weather Section-->
+               <!--Forecast 5 Day Section-->
+               <div class="container" id="forecast">
+                  <h3>5-Day Forecast:</h3>
+                  <div class="row">
+                     <!--Day 1 Forecast-->
+                     <div class="col-sm-2">
+                        <div class="card card5day">
+                           <h6 id="day1"></h6>
+                           <img id="img1" src="">
+                           <p><strong>Temp:</strong> <span id="temp1"></span> °F</p>
+                           <p><strong>Wind:</strong> <span id="wind1"></span> mph</p>
+                           <p><strong>Humidity:</strong> <span id="humidity1"></span>%</p>
+                        </div>
+                     </div>
+                     <!--Day 2 Forecast-->
+                     <div class="col-sm-2">
+                        <div class="card card5day">
+                           <h6 id="day2"></h6>
+                           <img id="img2" src="">
+                           <p><strong>Temp:</strong> <span id="temp2"></span> °F</p>
+                           <p><strong>Wind:</strong> <span id="wind2"></span> mph</p>
+                           <p><strong>Humidity:</strong> <span id="humidity2"></span>%</p>
+                        </div>
+                     </div>
+                     <!--Day 3 Forecast-->
+                     <div class="col-sm-2">
+                        <div class="card card5day">
+                           <h6 id="day3"></h6>
+                           <img id="img3" src="">
+                           <p><strong>Temp:</strong> <span id="temp3"></span> °F</p>
+                           <p><strong>Wind:</strong> <span id="wind3"></span> mph</p>
+                           <p><strong>Humidity:</strong> <span id="humidity3"></span>%</p>
+                        </div>
+                     </div>
+                     <!--Day 4 Forecast-->
+                     <div class="col-sm-2">
+                        <div class="card card5day">
+                           <h6 id="day4"></h6>
+                           <img id="img4" src="">
+                           <p><strong>Temp: </strong><span id="temp4"></span> °F</p>
+                           <p><strong>Wind:</strong> <span id="wind4"></span> mph</p>
+                           <p><strong>Humidity:</strong> <span id="humidity4"></span>%</p>
+                        </div>
+                     </div>
+                     <!--Day 5-->
+                     <div class="col-sm-2">
+                        <div class="card card5day">
+                           <h6 id="day5"></h6>
+                           <img id="img5" src="">
+                           <p><strong>Temp:</strong> <span id="temp5"></span> °F</p>
+                           <p><strong>Wind:</strong> <span id="wind5"></span> mph</p>
+                           <p><strong>Humidity:</strong> <span id="humidity5"></span>%</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End 5 day Container -->
+            </div>
+            <!--End Center Container -->
+         </div>
+         <!--Scripts: Moment, jQuery, JS-->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+         <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

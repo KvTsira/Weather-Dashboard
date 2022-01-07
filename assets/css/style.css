@@ -1,0 +1,155 @@
+
+
+:root {
+    font-family: "Montserrat", sans-serif !important;
+    --primary_color: #2E5266FF;
+    --secondary_color: #6E8898FF;
+    --other-color: #9FB1BCFF;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .navbar {
+    margin-bottom: 5vh;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  .currentWeather {
+    margin-top: 2vh;
+  }
+  .card {
+    background: var(--secondary_color);
+    border-radius: 15px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .card-search {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  
+  img {
+    width: 70px;
+  }
+  
+  .btn {
+    background-color: var(--other-color);
+    color: white;
+    border-radius: 5px;
+    font-family:   "Montserrat", sans-serif !important;
+    font-size: smaller;
+    font-weight: bold;
+    border-color: white;
+    border: 2px;
+    width: fit-content;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  p {
+    font-size: small;
+    line-height: 1em;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  h3 {
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  .col-sm-2 .card {
+    padding-top: 1vh;
+  }
+  
+  .todayBlock {
+    margin-bottom: 2vh;
+    display: flex;
+  }
+  
+  .card-title {
+    font-size: .8rem;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  .container {
+    width: 90vw;
+  }
+  
+  
+  #formCity {
+    max-width: fit-content;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  .card-search {
+    min-width: fit-content;
+  }
+  
+  .card5day {
+    height: fit-content;
+    font-size: .9rem;
+    margin-top: .2vh;
+  }
+  
+  body {
+    background-color: var(--primary_color);
+    height: 100vh;
+  }
+  
+  p,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  h5, h6 {
+    font-weight: 900;
+  }
+  .display-4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  /*UV COLORS */
+  .severeLevel {
+    padding: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+  }
+  
+  .moderateLevel {
+    padding: 4px;
+    background-color: orange;
+    font-weight: 900;
+    border-radius: 5px;
+  }
+  
+  .favorableLevel {
+    padding: 4px;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+  }
+  
+  .container {
+    width: 90vw;
+  }
+  #formCity {
+    max-width: fit-content;
+  }
