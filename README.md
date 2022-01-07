@@ -18,3 +18,18 @@
 * THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 * WHEN I click on a city in the search history
 * THEN I am again presented with current and future conditions for that city
+
+
+## Built With
+* HTML
+* Bootstrap / CSS
+* JavaScript
+* Moment.js
+* OpenWeather API
+
+## Project URL
+https://kvtsira.github.io/Weather-Dashboard/
+
+## Project Visual
+![image](https://user-images.githubusercontent.com/92122549/148587896-26f7c357-b14c-4ed4-b5d8-1d31708eed4e.png)
+
